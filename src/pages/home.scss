@@ -64,6 +64,10 @@
             object-fit: cover;
           }
 
+          span{
+            align-self: center;
+          }
+
           button{
             background-color: #5d5b8d;
             color: #ddddf7;
@@ -242,4 +246,10 @@
       }
     }
   }
+}
+
+.error{
+  text-align: center;
+  align-self: center;
+  justify-self: center;
 }
