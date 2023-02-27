@@ -81,7 +81,6 @@ export const Input = () => {
                     style={{display:"none"}}
                     id="file"
                     onChange={e => setImg(e.target.files[0])}
-                    value={img}
                 />
                 <label htmlFor="file">
                     <img src={Attach} alt=""/>

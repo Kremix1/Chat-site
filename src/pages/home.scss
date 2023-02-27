@@ -157,6 +157,7 @@
         padding: 10px;
         height: calc(100% - 110px);
         overflow: scroll;
+        overflow-x:hidden;
         .message{
           display: flex;
           gap: 20px;
