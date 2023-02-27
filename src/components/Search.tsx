@@ -25,12 +25,13 @@ export const Search = () => {
         }
     }
 
-    const handleKey = (e) => {
+    const handleKey = (e: any) => {
         e.code === "Enter" && handleSearch();
     }
 
     const handleSelect = async () => {
-        const combinedId = currentUser.uid > user.uid
+        const combinedId =
+            currentUser.uid > user.uid
             ? currentUser.uid + user.uid
             : user.uid + currentUser.uid
         try{
@@ -40,7 +41,7 @@ export const Search = () => {
                 await setDoc(doc(db, "chats", combinedId), { messages: [] })
                 await updateDoc(doc(db, "userChats", currentUser.uid), {
                     [combinedId+".userInfo"]: {
-                        uid:user.uid,
+                        uid: user.uid,
                         displayName: user.displayName,
                         photoURL: user.photoURL
                     },
