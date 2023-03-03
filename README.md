@@ -12,6 +12,12 @@
 
 #### SASS
 
+## Скрины чата:
+
+<img src="public/reg.png" width="300">\
+<img src="public/login.png" width="300">\
+<img src="public/chat.png" width="300">\
+<img src="public/chat2.png" width="300">
 ## Доступные скрипты
 
 В дериктории этого проекто можно запустить:
